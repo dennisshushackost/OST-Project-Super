@@ -1,0 +1,17 @@
+{
+    "name": "OTB TensorFlow GPU",
+    "image": "mdl4eo/otbtf:4.3.0-gpu-dev",
+    "runArgs": [
+        "--gpus", "all"
+    ],
+    "extensions": [
+		"ms-python.python",
+		"visualstudioexptteam.vscodeintellicode",
+		"ms-python.vscode-pylance",
+		"esbenp.prettier-vscode",
+		"ms-toolsai.jupyter",
+		"rsip-vision.nvidia-smi-plus",
+        ""
+	],
+    "postCreateCommand": "python3 -m pip install -r requirements.txt"
+}
